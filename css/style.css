@@ -35,3 +35,48 @@ ul {
 a {
 	text-decoration: none;
 }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	background: var(--bg-dark);
+}
+aside {
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	color: var(--bg-light);
+	justify-content: space-between;
+	padding: 2rem;
+	/* border-right: #ffffff solid 0.5px; */
+	box-shadow: var(--bg-light) 0 0 2.6px;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.menu_item {
+	background: transparent;
+	color: var(--bg-light);
+	padding: 1rem;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	border: 0;
+	border: 1px solid var(--bg-light);
+	font-weight: 600;
+}
+.menu_item.active {
+	background: var(--bg-light);
+	color: var(--bg-dark);
+}
+.shopping {
+	margin-top: 2rem;
+}
+main {
+	margin: 2rem;
+	border-radius: 1rem;
+	box-shadow: var(--bg-light) 0 0 3px;
+}
